@@ -1,0 +1,5 @@
+docker run -dp 8000:80 \
+  -w /app -v "$(pwd):/app" \
+  --network todo-app \
+  node:xwiki \
+  sh -c "yarn install && yarn run dev"
